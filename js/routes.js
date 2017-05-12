@@ -10,34 +10,10 @@ angular.module('app.routes', [])
     
   
 
-      .state('tabsController.wooMatchMakerIdeasScrach', {
+      .state('wooMatchMakerIdeasScrach', {
     url: '/page2',
-    views: {
-      'tab1': {
-        templateUrl: 'templates/wooMatchMakerIdeasScrach.html',
-        controller: 'wooMatchMakerIdeasScrachCtrl'
-      }
-    }
-  })
-
-  .state('tabsController.cartTabDefaultPage', {
-    url: '/page3',
-    views: {
-      'tab2': {
-        templateUrl: 'templates/cartTabDefaultPage.html',
-        controller: 'cartTabDefaultPageCtrl'
-      }
-    }
-  })
-
-  .state('tabsController.cloudTabDefaultPage', {
-    url: '/page4',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/cloudTabDefaultPage.html',
-        controller: 'cloudTabDefaultPageCtrl'
-      }
-    }
+    templateUrl: 'templates/wooMatchMakerIdeasScrach.html',
+    controller: 'wooMatchMakerIdeasScrachCtrl'
   })
 
   .state('tabsController', {
@@ -46,7 +22,7 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-$urlRouterProvider.otherwise('/page1/page2')
+$urlRouterProvider.otherwise('/page2')
 
   
 
